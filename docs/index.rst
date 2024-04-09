@@ -1,8 +1,8 @@
-Welcome to Lumache's documentation!
+Welcome to OpenAI-Style API's documentation!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
+OpenAI-Style API is a Python library to connect 
+different LLM vendors with unified OpenAI-Style API.
 It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
 and offers a *simple* and *intuitive* API.
 
