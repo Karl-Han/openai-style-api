@@ -11,9 +11,7 @@ different LLM vendors with unified OpenAI-Style API.
 
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
+   Home <self>
    api
    usage
 
