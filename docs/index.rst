@@ -23,6 +23,24 @@ A normal paragraph ending with ``::`` will flow and be word-wrapped::
     You can have multiple paragraphs like this, as long as they
     are all indented by the same amount.
 
+.. _code_c-label:
+
+.. code-block:: c
+
+   int main() { printf("Hello world\n"); return 0 }
+
+#. Item number 1
+#. The second item
+#. A third item
+
+.. this is a comment
+
+`this is the link text <https://docs.open-mpi.org/en/v5.0.x/developers/rst-for-markdown-expats.html>`_
+
+be sure to see :ref:`C Code to read<_code_c-label>`.
+
+You can also read :doc:`api </api>`
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
