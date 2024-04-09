@@ -1,9 +1,9 @@
 from typing import Iterator
-from adapters.base import ModelAdapter
-from adapters.protocol import ChatCompletionRequest, ChatCompletionResponse
+from openai_style_api.adapters.base import ModelAdapter
+from openai_style_api.adapters.protocol import ChatCompletionRequest, ChatCompletionResponse
 from loguru import logger
-from utils.util import num_tokens_from_string
-from clients.claude_web_client import ClaudeWebClient
+from openai_style_api.utils.util import num_tokens_from_string
+from openai_style_api.clients.claude_web_client import ClaudeWebClient
 import time
 
 

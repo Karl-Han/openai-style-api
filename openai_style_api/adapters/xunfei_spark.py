@@ -1,9 +1,9 @@
 import json
 from typing import Iterator
-from adapters.base import ModelAdapter
-from adapters.protocol import ChatCompletionRequest, ChatCompletionResponse
+from openai_style_api.adapters.base import ModelAdapter
+from openai_style_api.adapters.protocol import ChatCompletionRequest, ChatCompletionResponse
 from loguru import logger
-from clients.xunfei_spark.api.spark_api import SparkAPI
+from openai_style_api.clients.xunfei_spark.api.spark_api import SparkAPI
 import time
 import uuid
 

@@ -1,16 +1,16 @@
 from loguru import logger
-from adapters.azure import AzureAdapter
-from adapters.base import ModelAdapter, invalid_request_error
-from adapters.claude import ClaudeModel
-from adapters.claude_web import ClaudeWebModel
-from adapters.proxy import ProxyAdapter
-from adapters.zhipu_api import ZhiPuApiModel
-from adapters.xunfei_spark import XunfeiSparkAPIModel
-from adapters.router_adapter import RouterAdapter
-from adapters.model_name_router_adapter import ModelNameRouterAdapter
-from adapters.gemini_adapter import GeminiAdapter
-from adapters.bing_sydney import BingSydneyModel
-from adapters.qwen import QWenAdapter
+from openai_style_api.adapters.azure import AzureAdapter
+from openai_style_api.adapters.base import ModelAdapter, invalid_request_error
+from openai_style_api.adapters.claude import ClaudeModel
+from openai_style_api.adapters.claude_web import ClaudeWebModel
+from openai_style_api.adapters.proxy import ProxyAdapter
+from openai_style_api.adapters.zhipu_api import ZhiPuApiModel
+from openai_style_api.adapters.xunfei_spark import XunfeiSparkAPIModel
+from openai_style_api.adapters.router_adapter import RouterAdapter
+from openai_style_api.adapters.model_name_router_adapter import ModelNameRouterAdapter
+from openai_style_api.adapters.gemini_adapter import GeminiAdapter
+from openai_style_api.adapters.bing_sydney import BingSydneyModel
+from openai_style_api.adapters.qwen import QWenAdapter
 model_instance_dict = {}
 
 

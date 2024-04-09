@@ -1,8 +1,8 @@
 import asyncio
 from typing import Iterator
-from adapters.base import ModelAdapter
-from adapters.protocol import ChatCompletionRequest, ChatCompletionResponse
-from clients.sydney import SydneyClient
+from openai_style_api.adapters.base import ModelAdapter
+from openai_style_api.adapters.protocol import ChatCompletionRequest, ChatCompletionResponse
+from openai_style_api.clients.sydney import SydneyClient
 from loguru import logger
 
 

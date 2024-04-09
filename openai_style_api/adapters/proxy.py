@@ -1,7 +1,7 @@
 import json
 from typing import Iterator
-from adapters.base import ModelAdapter, stream, post
-from adapters.protocol import ChatCompletionRequest, ChatCompletionResponse
+from openai_style_api.adapters.base import ModelAdapter, stream, post
+from openai_style_api.adapters.protocol import ChatCompletionRequest, ChatCompletionResponse
 from loguru import logger
 
 

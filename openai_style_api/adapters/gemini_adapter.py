@@ -2,9 +2,9 @@ import json
 import time
 from typing import Dict, Iterator, List
 import uuid
-from adapters.base import ModelAdapter, post
-from adapters.protocol import ChatCompletionRequest, ChatCompletionResponse, ChatMessage
-from utils.util import num_tokens_from_string
+from openai_style_api.adapters.base import ModelAdapter, post
+from openai_style_api.adapters.protocol import ChatCompletionRequest, ChatCompletionResponse, ChatMessage
+from openai_style_api.utils.util import num_tokens_from_string
 
 """
 

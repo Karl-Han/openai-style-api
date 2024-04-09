@@ -5,10 +5,10 @@ from fastapi.responses import StreamingResponse, JSONResponse, HTMLResponse
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from fastapi.routing import APIRouter
 from pydantic import BaseModel
-from adapters.base import ModelAdapter, UDFApiError, serverError
-from adapters.protocol import ChatCompletionRequest, ChatCompletionResponse
+from openai_style_api.adapters.base import ModelAdapter, UDFApiError, serverError
+from openai_style_api.adapters.protocol import ChatCompletionRequest, ChatCompletionResponse
 from typing import Iterator, List, Optional
-from adapters.adapter_factory import get_adapter
+from openai_style_api.adapters.adapter_factory import get_adapter
 from loguru import logger
 from config import (
     ModelConfig,
@@ -155,7 +155,7 @@ def run(port=8090, log_level="info", prefix=""):
     app = create_app()
     app.include_router(router, prefix=prefix)
     app.mount("/static", StaticFiles(directory="dist"), name="static")
-    uvicorn.run(app, host="0.0.0.0", port=port, log_level=log_level)
+    uvicorn.run(app, host="127.0.0.1", port=port, log_level=log_level)
 
 
 if __name__ == "__main__":

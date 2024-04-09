@@ -1,10 +1,10 @@
 import json
 from typing import Iterator
 import requests
-from adapters.base import ModelAdapter, post, stream
-from adapters.protocol import ChatCompletionRequest, ChatCompletionResponse
+from openai_style_api.adapters.base import ModelAdapter, post, stream
+from openai_style_api.adapters.protocol import ChatCompletionRequest, ChatCompletionResponse
 from loguru import logger
-from utils.util import num_tokens_from_string
+from openai_style_api.utils.util import num_tokens_from_string
 import time
 
 # 默认的model映射，不过request中的model参数会被config覆盖

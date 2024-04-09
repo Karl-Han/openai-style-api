@@ -1,4 +1,4 @@
-from clients.sydney import SydneyClient
+from openai_style_api.clients.sydney import SydneyClient
 
 import pytest
 from aiohttp import ClientSession

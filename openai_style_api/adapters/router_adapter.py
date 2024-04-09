@@ -1,6 +1,6 @@
 from typing import Iterator
-from adapters.base import ModelAdapter
-from adapters.protocol import ChatCompletionRequest, ChatCompletionResponse
+from openai_style_api.adapters.base import ModelAdapter
+from openai_style_api.adapters.protocol import ChatCompletionRequest, ChatCompletionResponse
 import random
 from loguru import logger
 

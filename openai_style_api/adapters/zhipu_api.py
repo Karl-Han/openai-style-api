@@ -1,14 +1,14 @@
 from typing import Dict, Iterator, List
-from adapters.base import ModelAdapter, post, stream
-from adapters.protocol import ChatCompletionRequest, ChatCompletionResponse, ChatMessage
+from openai_style_api.adapters.base import ModelAdapter, post, stream
+from openai_style_api.adapters.protocol import ChatCompletionRequest, ChatCompletionResponse, ChatMessage
 import time
 
 import cachetools.func
 import jwt
 from loguru import logger
-from utils.util import num_tokens_from_string
+from openai_style_api.utils.util import num_tokens_from_string
 
-from utils.sse_client import SSEClient
+from openai_style_api.utils.sse_client import SSEClient
 
 API_TOKEN_TTL_SECONDS = 3 * 60
 

@@ -3,7 +3,7 @@ from typing import Dict, List
 
 from pydantic import BaseModel
 from loguru import logger
-from adapters.adapter_factory import init_adapter, clear_adapters
+from openai_style_api.adapters.adapter_factory import init_adapter, clear_adapters
 import os
 
 class ModelConfig(BaseModel):

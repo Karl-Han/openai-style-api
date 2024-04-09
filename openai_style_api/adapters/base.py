@@ -4,8 +4,8 @@ from typing import Union, Iterator
 
 from openai import OpenAIError
 import requests
-from adapters.protocol import ChatCompletionRequest, ChatCompletionResponse
-from utils.util import num_tokens_from_string
+from openai_style_api.adapters.protocol import ChatCompletionRequest, ChatCompletionResponse
+from openai_style_api.utils.util import num_tokens_from_string
 from loguru import logger
 
 
