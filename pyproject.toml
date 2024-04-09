@@ -1,0 +1,8 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "openai-style-api"
+authors = [{name = "tianminghui", email = "tianminghui@kuaishou.com"}]
+dynamic = ["version", "description"]
